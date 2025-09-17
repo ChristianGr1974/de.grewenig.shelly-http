@@ -4,7 +4,7 @@
     "en": "Shelly Gen2 Device",
     "de": "Shelly Gen2 Gerät"
   },
-  "class": "other",
+  "class": "socket",
   "capabilities": [
     "measure_power",
     "measure_current"
@@ -33,5 +33,8 @@
       "id": "add_devices",
       "template": "add_devices"
     }
-  ]
+  ],
+  "energy": {
+    "usesEnergy": true
+  }
 }
