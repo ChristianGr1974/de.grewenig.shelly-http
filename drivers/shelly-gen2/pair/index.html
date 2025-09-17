@@ -1,0 +1,12 @@
+<script type="application/javascript">
+  Homey.setTitle("Add Shelly Gen2 Device");
+
+  function onSubmit() {
+    const ip = document.getElementById("ip").value;
+    Homey.emit("save_device", { ip });
+  }
+</script>
+
+<label>IP Address:</label>
+<input id="ip" type="text" />
+<button onclick="onSubmit()">Save</button>
